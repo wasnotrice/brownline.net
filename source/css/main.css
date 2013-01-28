@@ -96,6 +96,8 @@ textarea {
 body {
   color: #51350E;
   background-color:#FCF4EA;
+  font-family: SoinSansPro-Thin, sans-serif;
+  font-size: 1.2em;
 }
 
 body>header {
@@ -105,10 +107,16 @@ body>header {
 }
 
 body>header h1 {
+  font-family: SoinSansPro-LightOblique, sans-serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
 }
 
 body>header .tagline {
-  font-size:0.5em;
+  font-family: SoinSansPro-ThinOblique, sans-serif;
+  font-size: 0.5em;
+  text-transform: none;
 }
 
 
