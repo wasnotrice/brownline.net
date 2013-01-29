@@ -1,1 +1,1 @@
-This is the source of the brownline.net website.
+This is the source of www.brownline.net.
