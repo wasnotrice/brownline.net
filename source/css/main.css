@@ -94,33 +94,39 @@ textarea {
    ========================================================================== */
 
 body {
-  color: #51350E;
+  color:#51350E;
   background-color:#FCF4EA;
-  font-family: SoinSansPro-Thin, sans-serif;
-  font-size: 1.5em;
+  font-family:SoinSansPro-Light, sans-serif;
+  font-size:1.2em;
+  margin:0;
 }
 
 body>header {
-  border-bottom: 4px solid #51350E;
-  margin-bottom: 2em;
+  border-bottom:4px solid #51350E;
+  margin-bottom:2em;
   clear:both;
   text-align:center;
 }
 
 body>header h1 {
-  font-family: SoinSansPro-LightOblique, sans-serif;
-  font-size: 3.2em;
-  text-transform: uppercase;
-  margin: 0 0 0 0;
+  font-family:SoinSansPro-LightOblique, sans-serif;
+  font-size:2.4em;
+  text-transform:uppercase;
+  margin:0.4em 0 0 0;
+  line-height:1em;
+  display:inline-block;
 }
 
 body>header .tagline {
-  font-family: SoinSansPro-ThinOblique, sans-serif;
-  font-size: 1.4em;
-  text-transform: none;
+  font-family:SoinSansPro-ThinOblique, sans-serif;
+  font-size:1.2em;
+  margin:0 0.5em 0.4em;
+  display:inline-block;
 }
 
-
+#content {
+  margin:0 0.8em;
+}
 
 
 
@@ -240,6 +246,15 @@ body>header .tagline {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 24em) {
+  body>header h1 {
+    font-size:3em;
+  }
+
+  body>header .tagline {
+    font-size:1.4em;
+  }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
