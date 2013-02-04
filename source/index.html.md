@@ -2,4 +2,5 @@
 title: Brownline&mdash;web &amp; mobile applications
 ---
 
-.slogan Custom code for a smooth ride
+Custom code for a smooth ride
+

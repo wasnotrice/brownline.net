@@ -111,8 +111,9 @@
     -# Navigation
     -# ==========================================================================
     %header.clearfix
-      %h1 Brownline
-      %p.tagline web &amp; mobile applications
+      #masthead
+        %h1 Brownline
+        %p.tagline web &amp; mobile applications
 
 
     -# ==========================================================================
@@ -120,6 +121,14 @@
     -# ==========================================================================
     #content
       = yield
+
+    %footer
+      #footer
+        %h1 Contact
+        .vcard
+          .phone 218-260-2924
+          .email eric ((at)) brownline ((dot)) net
+
 
     -# JS
     -# ==========================================================================
