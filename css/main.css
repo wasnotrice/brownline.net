@@ -94,48 +94,94 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Color */
+html,
+body > footer,
+body > footer * {
+  background-color:#51350E;
+  color:#FFFBF4;
+}
+
 body {
+  background-color:#FFFBF4;
   color:#51350E;
-  background-color:#FCF4EA;
+}
+
+/* Typography */
+body {
   font-family:SoinSansPro-Light, sans-serif;
-  font-size:1.2em;
-  margin:0;
+  /*font-size:1.2em;
+   */
+  font-size:1.8em;
 }
 
 body>header {
-  border-bottom:4px solid #51350E;
-  margin-bottom:2em;
-  clear:both;
   text-align:center;
 }
 
-body>header h1 {
+#masthead h1 {
   font-family:SoinSansPro-LightOblique, sans-serif;
-  font-size:2.4em;
+  font-size:1.5em;
   text-transform:uppercase;
-  margin:0.4em 0 0 0;
-  line-height:1em;
-  display:inline-block;
+  line-height:1.1em;
 }
 
-body>header .tagline {
+#masthead .tagline {
   font-family:SoinSansPro-ThinOblique, sans-serif;
-  font-size:1.2em;
-  margin:0 0.5em 0.4em;
+  font-size:0.8em;
+}
+
+#footer * {
+  font-size: 0.8em;
+}
+
+#footer h1 {
+  text-transform:uppercase;
+  font-size:0.8em;
+  font-family:SoinSansPro-LightOblique, sans-serif;
+}
+
+
+/* Layout */
+body {
+  margin:0;
+}
+
+#masthead,
+#content,
+#footer {
+  max-width:35em;
+  margin:0 1em;
+}
+
+#masthead {
+  margin-top:0.1em;
+  margin-bottom:0.2em;
+}
+
+body>header {
+  border-bottom:0.2em solid #51350E;
+  /*background-image:url('/img/line.png');
+   */
+  background-repeat:repeat-x;
+  background-position:bottom;
+  margin-bottom:1.4em;
+  clear:both;
+}
+
+#masthead h1 {
+  margin:0.4em 0 0 0;
   display:inline-block;
 }
 
-#content {
-  margin:0 0.8em;
+#masthead .tagline {
+  margin:0 0.5em 0.4em 0;
+  display:inline-block;
 }
 
-
-
-
-
-
-
-
+body > footer {
+  padding-top:0.8em;
+}
 
 
 
@@ -257,8 +303,21 @@ body>header .tagline {
   }
 }
 
-@media only screen and (min-width: 35em) {
+/* (35 + 2) * 1.8 */
+@media only screen and (min-width: 66.6em) {
     /* Style adjustments for viewports that meet the condition */
+  #masthead,
+  #content,
+  #footer {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #masthead h1 {
+  }
+
+  #masthead .tagline {
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
